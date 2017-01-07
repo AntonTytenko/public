@@ -267,6 +267,18 @@ header {
 	position:relative;
 }
 
+#team buttom{
+	margin: 4% 45% 0 45%;
+    width: 9%;
+    height: 8%;
+    border: 1px solid #00e0d0;
+    border-radius: 2px;
+    background-color: #09052f;
+    color: #00e0d0;
+    font-family: "Hammersmith One";
+    font-size: 1em;
+    font-weight: 400;}
+
 .blog {
 	position: absolute;
 	left:0;
@@ -351,14 +363,18 @@ header {
 	font-size: 14px;
 	font-weight: 300;}
 	
-.blog button{
-	margin:.5% 44%;
-	width: 140px;
-	height: 40px;
-	border: 1px solid #00e0d0;
-	border-radius: 2px;
-	background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
-	}
+.blog button {
+    margin: .5% 44%;
+    width: 140px;
+    height: 40px;
+    border: 1px solid #00e0d0;
+    border-radius: 2px;
+    background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+    color: #00e0d0;
+	font-family: "Hammersmith One";
+	font-size: 1em;
+    font-weight: 400;
+}
 	
 @media screen and (max-width: 700px) {
 	.blog {height:0px;}
