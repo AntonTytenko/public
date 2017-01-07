@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, instal-scale=1.0">
+<link media="screen" rel="stylesheet" href="css/style.css" />
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Roboto" rel="stylesheet">
+<title>Tajem Master</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+		//НАЧАЛА СКРОЛА
+		$(document).scroll(function(){
+			if ($(document).scrollTop() > 200) 
+				{$('#scrollTop').css({'visibility':'visible'});}
+			else 
+				{$('#scrollTop').css({'visibility':'hidden'});}
+			});
+			$('#scrollTop').click(function(){
+			$('body').animate({scrollTop: 0}, 500);
+			});
+		//КОНЕЦ СКРОЛА 
+		//
+		$("#header a").click(function(){
+				var href = $(this).attr("href");
+				var posit = $(href).offset();
+				$('body').animate({scrollTop: Math.round(posit.top)}, 500);	
+			});
+		//
+		//
+			$("body").css({"opacity":0});
+			$("body").animate({"opacity":1}, 1000);						
+ 
+		//
+});
+</script>
+</head>
+
+<body>
+<div id="wrappre">
+	<header>
+    <img id="#bg_imag" src="imag/bg.png" width="100%" height="100%" />
+	<div id="header">
+    	<img class="logo" src="imag/logo.png">
+        <ul>	
+       	  <li><a href="#header">HOME</a> </li>
+            <li><a href="#story">ABOUT</a></li>
+            <li><a href="#expertise">EXPERTISE</a> </li>
+            <li><a href="#team">TEAMS</a></li>
+            <li><a href="#works">WORKS</a></li>
+            <li><a href="#people_sey">PEOPLE SAY</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      <h1>We Are Awesome Creative Agency</h1>
+      <h2>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</h2>
+   	  <a href="http://bootstrapthemes.co/demo/html/tajem-free-html5-creative-agency-portfolio-template/"><button>LEARN MORE</button></a>
+      <img src="imag/4-layers.png" class="nav" width="55" height="10"> 
+    </div>
+    </header>
+    <div id="story"> 
+        <img src="imag/big-logo.png" width="235" height="229">
+		<div>
+          <strong>OUR STORY</strong>
+          <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus</p>
+          <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            <button>LEARN MORE</button>
+        </div>
+    </div>
+    
+	<div id="watch">
+	  <div>
+      	<img src="imag/city.png" class="city" >
+	    <div class="video">
+            <img src="imag/2-layers.png"><br>
+            <a href="https://www.youtube.com/embed/_l6CQRHIGyg"><strong>WATCH OUR STORY</strong></a></div>
+      </div>
+    </div>
+    
+
+<a id="scrollTop">Click me</a>
+</body>
+</html>
